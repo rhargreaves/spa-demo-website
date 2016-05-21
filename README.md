@@ -1,6 +1,6 @@
-# spa-demo-website
+# Spa 2016 Outside-In CDN Demo Website ![build status](https://travis-ci.org/rhargreaves/spa-demo-website.svg)
 
-Demo website demonstrating large static and dynamic content
+Website demonstrating large static and dynamic content
 
 ## Getting Started
 
