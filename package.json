@@ -1,15 +1,14 @@
 {
   "name": "spa-demo-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo website for SPA 2016 Outside-In CDN Development talk",
   "main": "app.js",
   "dependencies": {
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./node_modules/mocha/bin/mocha",
     "start": "node app.js"
   },
   "repository": {
@@ -21,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/rhargreaves/spa-demo-website/issues"
   },
-  "homepage": "https://github.com/rhargreaves/spa-demo-website#readme"
+  "homepage": "https://github.com/rhargreaves/spa-demo-website#readme",
+  "devDependencies": {
+    "assert": "^1.4.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "zombie": "^4.2.1"
+  }
 }
