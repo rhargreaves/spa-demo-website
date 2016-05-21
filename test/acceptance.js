@@ -16,5 +16,11 @@ describe('Given I have my browser open', function() {
     it('I should see welcome text', function() {
       browser.assert.text('h1', 'Nice Clouds');
     });
+
+    it('I should see a counter on the page', function() {
+      browser.assert.text('#counter', function(actual) {
+        return actual.indexOf("units") > -1
+      });
+    });
   });
 });
