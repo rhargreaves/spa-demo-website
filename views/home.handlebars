@@ -15,15 +15,17 @@
 				counterElement.textContent = data.value.toLocaleString() + " units";
 		  } else {
 		    // We reached our target server, but it returned an error
-					counterElement.textContent = "Error!";
+					counterElement.textContent = "Error. Refresh page!";
+					clearTimeout(counterTimerId);
 		  }
 		};
 		request.onerror = function() {
 		  // There was a connection error of some sort
-				counterElement.textContent = "Connection error!";
+				counterElement.textContent = "Connection error. Refresh page!";
+				clearTimeout(counterTimerId);
 		};
 		request.send();
 	};
 	updateCounter();
-	setInterval(updateCounter, 1000);
+  var counterTimerId = setInterval(updateCounter, 1000);
 </script>

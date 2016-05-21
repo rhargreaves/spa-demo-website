@@ -24,7 +24,7 @@ app.get('/counter', function(req, res) {
 
 setInterval(function(){
   counter++;
-}, 100);
+}, 71);
 
 
 app.listen(process.env.PORT || 3000);
