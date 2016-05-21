@@ -16,4 +16,4 @@ app.get('/slow/clouds.mp4', function (req, res) {
 	}, 2000);
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
