@@ -14,6 +14,7 @@ app.get('/', function (req, res) {
 
 app.get('/slow/clouds.mp4', function (req, res) {
 	setTimeout(function() {
+    res.header("Content-Type", "video/mp4");
 		res.sendFile(__dirname + '/assets/clouds.mp4');
 	}, 2000);
 });
