@@ -9,6 +9,8 @@ describe('Given I have my browser open', function() {
   const browser = new Browser();
 
   describe('When I navigate to the home page', function() {
+    this.timeout(15000);
+    
     before(function(done) {
       browser.visit('/', done);
     });

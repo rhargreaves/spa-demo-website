@@ -1,3 +1,29 @@
 <h1>Nice Clouds</h1>
 
-<div id="counter">1,000 units</div>
+<div id="counter">
+</div>
+
+<script>
+	function updateCounter() {
+		var request = new XMLHttpRequest();
+		request.open('GET', "/counter", true);
+		request.onload = function() {
+		  if (request.status >= 200 && request.status < 400) {
+		    // Success!
+		    var data = JSON.parse(request.responseText);
+				var counterElement = document.getElementById('counter');
+				counterElement.textContent = data.value.toLocaleString() + " units";
+		  } else {
+		    // We reached our target server, but it returned an error
+					counterElement.textContent = "Error!";
+		  }
+		};
+		request.onerror = function() {
+		  // There was a connection error of some sort
+				counterElement.textContent = "Connection error!";
+		};
+		request.send();
+	};
+	updateCounter();
+	setInterval(updateCounter, 1000);
+</script>
