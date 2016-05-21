@@ -13,5 +13,5 @@ deploy:
   env: robh-spa-2016-demo-site
   bucket_name: elasticbeanstalk-eu-west-1-542677982550
   on:
-    repo: spa-demo-website
+    repo: rhargreaves/spa-demo-website
     branch: master
