@@ -31,6 +31,9 @@ app.get('/counter', function(req, res) {
 
 setInterval(function(){
   counter++;
+  if(counter >= 20000) {
+    counter = 10000;
+  }
 }, 71);
 
 
