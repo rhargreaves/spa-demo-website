@@ -1,5 +1,6 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
+var request = require('request');
 
 var app = express();
 
@@ -14,8 +15,13 @@ app.get('/', function (req, res) {
 
 app.get('/slow/clouds.mp4', function (req, res) {
 	setTimeout(function() {
-    res.header("Content-Type", "video/mp4");
-		res.sendFile(__dirname + '/assets/clouds.mp4');
+    var options = {
+      url: 'https://s3-eu-west-1.amazonaws.com/robh-spa-2016-assets/clouds.mp4',
+      headers: {
+        range: req.headers.range
+      }
+    };
+    request(options).pipe(res);
 	}, 2000);
 });
 
