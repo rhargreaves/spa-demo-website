@@ -26,7 +26,6 @@ app.get('/slow/clouds.mp4', function (req, res) {
 });
 
 app.get('/counter', function(req, res) {
-  res.setHeader('Cache-Control', 'private,max-age=0');
   res.send({ value: counter });
 });
 
