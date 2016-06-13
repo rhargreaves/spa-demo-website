@@ -10,18 +10,18 @@ describe('Given I have my browser open', function() {
 
   describe('When I navigate to the home page', function() {
     this.timeout(15000);
-    
+
     before(function(done) {
       browser.visit('/', done);
     });
 
     it('I should see welcome text', function() {
-      browser.assert.text('h1', 'Nice Clouds');
+      browser.assert.text('h1', "Aren't these clouds pretty?");
     });
 
     it('I should see a counter on the page', function() {
       browser.assert.text('#counter', function(actual) {
-        return actual.indexOf("units") > -1
+        return actual.indexOf("rain drops") > -1
       });
     });
   });
