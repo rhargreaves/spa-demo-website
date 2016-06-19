@@ -31,10 +31,7 @@ app.get('/counter', function(req, res) {
 
 setInterval(function(){
   counter++;
-  if(counter >= 20000) {
-    counter = 10000;
-  }
-}, 71);
+}, 333);
 
 
 app.listen(process.env.PORT || 3000);
