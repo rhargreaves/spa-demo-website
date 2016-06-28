@@ -16,12 +16,12 @@ describe('Given I have my browser open', function() {
     });
 
     it('I should see welcome text', function() {
-      browser.assert.text('h1', "Aren't these clouds pretty?");
+      browser.assert.text('#tagline-container', "Aren't these little fluffy clouds pretty?");
     });
 
     it('I should see a counter on the page', function() {
       browser.assert.text('#counter', function(actual) {
-        return actual.indexOf("rain drops") > -1
+        return actual.indexOf("raindrops") > -1
       });
     });
   });

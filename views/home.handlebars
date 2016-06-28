@@ -16,7 +16,7 @@ function updateCounter() {
 			// Success!
 			var data = JSON.parse(request.responseText);
 			var counterElement = document.getElementById('counter');
-			counterElement.textContent = data.value + " rain drops";
+			counterElement.textContent = data.value + " raindrops";
 		} else {
 			// We reached our target server, but it returned an error
 			counterElement.textContent = "Error. Refresh page!";
