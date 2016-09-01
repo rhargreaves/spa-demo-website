@@ -9,9 +9,9 @@ deploy:
   secret_access_key:
     secure: "lkEdLARcYNlhQaS2wF/f+ypTpzkat3SDMqnBdlemyuR6T4i3gcFHqqymSOisMuemLwlIg1dUjQkA9ho3rOc9ucBbtevxc+nHY1aUtlYs/We6ETCqj/naDqSLn0bdkAKj8jF+yyLxyXzTCZvRfJ2nyReqX3NHcQGTMGd2sl+ufQB7IoVCrctP3Skep6/A9q6n4HRteg8YhQY2hOdEmrqdG4zAK51ThovHjz7CliIHwGslCHXNpK4tyHPq8EuJrYyxCghywpcSTAguIm8riNBK0g9neBEQPUWHpoetty35EBMRL09VE5FbtWFo2zzF3xCWGgPHvTtVQbE1xMwlAtqROlOZFXde6RMS3ED08pGVrAJehw1wwNR/D0riy55eKxYTiMNcX3G05y7EQpVXqTVNtmtL4BIqglhW5/hIUs9qOspXk7PY8Wj8nSlbxsOhCLqQDzq2qLPZP9cUfPnP1jyhbYO8U5cgfvOGS0phfs8B8JVXPSzLM8PmAQHyG8cRTC9faGlrPMgRQFZ6o+1vpB8MtfdrsqTb4W27IjL3yjMyj+tREj1kiMyHMWZ8XZqDxIH8/8+Y7n9UfNGNPLAkheLozkideVeuM9ikPF9qyS0r7tNK+Spr03wbBoq41PEFK48RIvypqdqI8W5elS+U3W9nsBqAYskkJs/R7C2+1034e4M="
   region: eu-west-1
-  app: Rob H SPA 2016 Demo Site
-  env: robh-spa-2016-demo-site
+  app: RobH CDN TDD Demo Site
+  env: robh-cdn-tdd-demo-site
   bucket_name: elasticbeanstalk-eu-west-1-542677982550
   on:
-    repo: rhargreaves/spa-demo-website
+    repo: rhargreaves/tdd-cdn-demo-site
     branch: master
