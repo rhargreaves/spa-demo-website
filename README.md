@@ -1,4 +1,4 @@
-# Outside-In CDN Demo Site [![build status](https://travis-ci.org/rhargreaves/tdd-cdn-demo-site.svg)](https://travis-ci.org/rhargreaves/tdd-cdn-demo-site)
+# Outside-In TDD of CDN Configuration Demo Site [![build status](https://travis-ci.org/rhargreaves/tdd-cdn-demo-site.svg)](https://travis-ci.org/rhargreaves/tdd-cdn-demo-site)
 
 Website demonstrating large static and dynamic content.
 
