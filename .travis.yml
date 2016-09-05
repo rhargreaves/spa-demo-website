@@ -15,3 +15,5 @@ deploy:
   on:
     repo: rhargreaves/tdd-cdn-demo-site
     branch: master
+notifications:
+    email: false
